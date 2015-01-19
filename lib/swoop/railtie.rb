@@ -1,6 +1,6 @@
 class Swoop::Railtie < ::Rails::Railtie
 
-  config.log_progname ||= nil
+  config.log_progname ||= nil if config.respond_to?(:log_progname=)
   config.before_initialize { Swoop::Rails.set_logger(config) }
 
   if defined?(::Lograge)
