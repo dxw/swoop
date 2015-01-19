@@ -14,7 +14,8 @@ module Swoop
 
   def self.load_dependencies
     require "colored"
-  rescue
+  rescue LoadError
+    return nil
   end
 
 end
