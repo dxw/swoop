@@ -4,7 +4,7 @@ class Swoop::Formatter
     if Swoop.colorize?
       "#{ severity[0].bold.send(severity_color(severity)) } #{ datetime.iso8601.bold.black } #{ (progname || "mytvh-web").bold }: #{ msg.strip }\n"
     else
-      "#{ severity[0] } #{ datetime.iso8601 } #{ progname || "mytvh-web" }: #{ msg.strip }\n"
+      "#{ severity[0] } #{ datetime.iso8601 } #{ progname || "rails" }: #{ msg.strip }\n"
     end
   end
 
