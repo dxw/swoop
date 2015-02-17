@@ -17,5 +17,5 @@ I 2015-02-17T16:05:04+00:00 my awesome app: method=GET path=/v1/users/1 format=j
 ## Installation
 
 ```
-gem "colored", "~> 0.0.4"
+gem "colored", "~> 0.0.5"
 ```
