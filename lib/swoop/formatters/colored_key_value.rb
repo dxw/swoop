@@ -29,7 +29,7 @@ module Swoop
         elsif value.is_a?(Symbol)
           value = "#{ value }".blue.bold
         elsif value.is_a?(Hash)
-          value = value.to_json.black.bold
+          value = value.to_json
         end
       end
 
