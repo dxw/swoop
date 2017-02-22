@@ -6,8 +6,8 @@ require 'swoop/version'
 Gem::Specification.new do |spec|
   spec.name          = "swoop"
   spec.version       = Swoop::VERSION
-  spec.authors       = ["Philip Vieira"]
-  spec.email         = ["philip@dxw.com"]
+  spec.authors       = ["dxw"]
+  spec.email         = ["rails@dxw.com"]
   spec.summary       = %q{Ruby gem for dxw flavored rails logging.}
   spec.homepage      = "https://github.com/dxw/swoop"
   spec.license       = "MIT"
