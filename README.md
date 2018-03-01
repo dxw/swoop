@@ -1,6 +1,15 @@
 # Swoop
 Ruby gem for dxw flavored rails logging extending lograge
 
+## Installation
+
+Add the following to your gemfile
+
+```
+gem 'swoop', git: 'https://github.com/dxw/swoop.git', tag: 'v0.0.7'
+```
+
+
 ## Configuratuin
 
 ### Colorise logs
@@ -19,3 +28,7 @@ I 2015-02-17T16:05:04+00:00 my awesome app: method=GET path=/v1/users/1 format=j
 ```
 gem "colored", "~> 0.0.5"
 ```
+
+## Releasing a new version
+
+Run `$ bundle exec rake release`. This will attach a version number tag of the form `v0.0.7` to HEAD and push it to GitHub.
